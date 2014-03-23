@@ -21,6 +21,11 @@
 		8414A0A818DE301100DA168D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8414A08A18DE301100DA168D /* UIKit.framework */; };
 		8414A0B018DE301100DA168D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8414A0AE18DE301100DA168D /* InfoPlist.strings */; };
 		8414A0B218DE301100DA168D /* RestaurantProblemTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8414A0B118DE301100DA168D /* RestaurantProblemTests.m */; };
+		8414A14A18DE369F00DA168D /* RPAvailability.m in Sources */ = {isa = PBXBuildFile; fileRef = 8414A14918DE369F00DA168D /* RPAvailability.m */; };
+		8414A14C18DE3B1400DA168D /* sampleData.JSON in Resources */ = {isa = PBXBuildFile; fileRef = 8414A14B18DE3B1400DA168D /* sampleData.JSON */; };
+		8414A19218DE46BA00DA168D /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8414A19018DE46BA00DA168D /* Model.xcdatamodeld */; };
+		8414A19518DE4F4A00DA168D /* RPTimeSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8414A19418DE4F4A00DA168D /* RPTimeSelectViewController.m */; };
+		8414A19818DE5F1100DA168D /* RPGuestNumberViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8414A19718DE5F1100DA168D /* RPGuestNumberViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,14 @@
 		8414A0AD18DE301100DA168D /* RestaurantProblemTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RestaurantProblemTests-Info.plist"; sourceTree = "<group>"; };
 		8414A0AF18DE301100DA168D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8414A0B118DE301100DA168D /* RestaurantProblemTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RestaurantProblemTests.m; sourceTree = "<group>"; };
+		8414A14818DE369F00DA168D /* RPAvailability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPAvailability.h; sourceTree = "<group>"; };
+		8414A14918DE369F00DA168D /* RPAvailability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPAvailability.m; sourceTree = "<group>"; };
+		8414A14B18DE3B1400DA168D /* sampleData.JSON */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sampleData.JSON; sourceTree = "<group>"; };
+		8414A19118DE46BA00DA168D /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		8414A19318DE4F4A00DA168D /* RPTimeSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPTimeSelectViewController.h; sourceTree = "<group>"; };
+		8414A19418DE4F4A00DA168D /* RPTimeSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPTimeSelectViewController.m; sourceTree = "<group>"; };
+		8414A19618DE5F1100DA168D /* RPGuestNumberViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPGuestNumberViewController.h; sourceTree = "<group>"; };
+		8414A19718DE5F1100DA168D /* RPGuestNumberViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPGuestNumberViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,13 +125,19 @@
 		8414A08C18DE301100DA168D /* RestaurantProblem */ = {
 			isa = PBXGroup;
 			children = (
+				8414A14718DE366E00DA168D /* Reservation Availability API */,
 				8414A09518DE301100DA168D /* RPAppDelegate.h */,
 				8414A09618DE301100DA168D /* RPAppDelegate.m */,
 				8414A09818DE301100DA168D /* Main.storyboard */,
+				8414A19618DE5F1100DA168D /* RPGuestNumberViewController.h */,
+				8414A19718DE5F1100DA168D /* RPGuestNumberViewController.m */,
 				8414A09B18DE301100DA168D /* RPViewController.h */,
 				8414A09C18DE301100DA168D /* RPViewController.m */,
+				8414A19318DE4F4A00DA168D /* RPTimeSelectViewController.h */,
+				8414A19418DE4F4A00DA168D /* RPTimeSelectViewController.m */,
 				8414A09E18DE301100DA168D /* Images.xcassets */,
 				8414A08D18DE301100DA168D /* Supporting Files */,
+				8414A19018DE46BA00DA168D /* Model.xcdatamodeld */,
 			);
 			path = RestaurantProblem;
 			sourceTree = "<group>";
@@ -126,6 +145,7 @@
 		8414A08D18DE301100DA168D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8414A14B18DE3B1400DA168D /* sampleData.JSON */,
 				8414A08E18DE301100DA168D /* RestaurantProblem-Info.plist */,
 				8414A08F18DE301100DA168D /* InfoPlist.strings */,
 				8414A09218DE301100DA168D /* main.m */,
@@ -150,6 +170,15 @@
 				8414A0AE18DE301100DA168D /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8414A14718DE366E00DA168D /* Reservation Availability API */ = {
+			isa = PBXGroup;
+			children = (
+				8414A14818DE369F00DA168D /* RPAvailability.h */,
+				8414A14918DE369F00DA168D /* RPAvailability.m */,
+			);
+			name = "Reservation Availability API";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +260,7 @@
 				8414A09F18DE301100DA168D /* Images.xcassets in Resources */,
 				8414A09118DE301100DA168D /* InfoPlist.strings in Resources */,
 				8414A09A18DE301100DA168D /* Main.storyboard in Resources */,
+				8414A14C18DE3B1400DA168D /* sampleData.JSON in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,7 +279,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8414A14A18DE369F00DA168D /* RPAvailability.m in Sources */,
 				8414A09718DE301100DA168D /* RPAppDelegate.m in Sources */,
+				8414A19218DE46BA00DA168D /* Model.xcdatamodeld in Sources */,
+				8414A19818DE5F1100DA168D /* RPGuestNumberViewController.m in Sources */,
+				8414A19518DE4F4A00DA168D /* RPTimeSelectViewController.m in Sources */,
 				8414A09318DE301100DA168D /* main.m in Sources */,
 				8414A09D18DE301100DA168D /* RPViewController.m in Sources */,
 			);
@@ -456,6 +490,7 @@
 				8414A0B718DE301100DA168D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8414A0B818DE301100DA168D /* Build configuration list for PBXNativeTarget "RestaurantProblemTests" */ = {
 			isa = XCConfigurationList;
@@ -464,8 +499,22 @@
 				8414A0BA18DE301100DA168D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8414A19018DE46BA00DA168D /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8414A19118DE46BA00DA168D /* Model.xcdatamodel */,
+			);
+			currentVersion = 8414A19118DE46BA00DA168D /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 8414A07B18DE301100DA168D /* Project object */;
 }

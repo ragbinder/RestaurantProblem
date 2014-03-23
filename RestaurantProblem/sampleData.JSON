@@ -1,0 +1,18 @@
+{"restaurant":"Sampletons",
+"availability":[
+	{"time":700, "slots":7},
+	{"time":800, "slots":7},
+	{"time":900, "slots":7},
+	{"time":1000, "slots":7},
+	{"time":1100, "slots":7},
+	{"time":1200, "slots":10},
+	{"time":1300, "slots":10},
+	{"time":1400, "slots":0},
+	{"time":1500, "slots":0},
+	{"time":1600, "slots":10},
+	{"time":1700, "slots":10},
+	{"time":1800, "slots":10},
+	{"time":1900, "slots":10},
+	{"time":2000, "slots":10}
+	]
+}	
