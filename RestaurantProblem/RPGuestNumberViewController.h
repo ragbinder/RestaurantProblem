@@ -17,8 +17,10 @@
 @property (weak, nonatomic) IBOutlet UILabel *dateLabel;
 @property (weak, nonatomic) IBOutlet UILabel *timeLabel;
 @property (weak, nonatomic) IBOutlet UILabel *guestsLabel;
+//The highest number of guests a reservation can accomodate.
 @property (nonatomic) NSInteger maxGuests;
 
+//This is the method for the Make Reservation Button. It handles all parts of confirming the reservation and giving the app delegate a new NSManagedObject to keep track of.
 - (IBAction)makeReservation:(id)sender;
 
 @end
